@@ -1,8 +1,8 @@
 import { Button } from '@material-ui/core';
 
-const Login=() => {
+const Login=() => {    
     return(
-        <Button variant="contained" color="primary">
+        <Button variant="contained"  color="primary">
             Inicia sesion
         </Button>
     );

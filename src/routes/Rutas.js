@@ -1,8 +1,8 @@
-import { useEffect, useState} from "react";
-import { BrowserRouter as Router, Switch, Route, Redirect} from 'react-router-dom';
+import { useEffect} from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Login from "../pages/Login";
 
-export const Routes = () => {
+export const Rutas = () => {
     //const [checking, SetChecking] = useState(true);
     //const [isLoggedIn, SetIsLoggedIn] = useState(false);
 
@@ -12,11 +12,9 @@ export const Routes = () => {
 
     return (
         <Router>
-            <Switch>
+            <Routes>
                 <Route path="/login" component={Login} />
-                <Redirect to="/login" />
-                
-            </Switch>
+            </Routes>
         </Router>
     )
 
