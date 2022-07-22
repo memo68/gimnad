@@ -1,9 +1,9 @@
-import { Button } from 'mater';
+import { Button } from '@material-ui/core';
 
 const Login=() => {
     return(
         <Button variant="contained" color="primary">
-            Primary
+            Inicia sesion
         </Button>
     );
 }
